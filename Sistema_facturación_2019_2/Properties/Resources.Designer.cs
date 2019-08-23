@@ -63,9 +63,29 @@ namespace Sistema_facturación_2019_2.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _971816 {
+            get {
+                object obj = ResourceManager.GetObject("971816", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap bar_code {
             get {
                 object obj = ResourceManager.GetObject("bar-code", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap btn_fake {
+            get {
+                object obj = ResourceManager.GetObject("btn_fake", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
