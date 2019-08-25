@@ -53,5 +53,17 @@ namespace Sistema_facturación_2019_2
             FrmCategorias frmCategorias = new FrmCategorias();
             AbrirForm(frmCategorias);
         }
+
+        private void btnFacturas_Click(object sender, EventArgs e)
+        {
+            FrmFacturas frmFacturas = new FrmFacturas();
+            AbrirForm(frmFacturas);
+        }
+
+        private void btnInformes_Click(object sender, EventArgs e)
+        {
+            FrmInformes frmInformes = new FrmInformes();
+            AbrirForm(frmInformes);
+        }
     }
 }

@@ -46,13 +46,13 @@
             this.btnEmpleados = new System.Windows.Forms.Button();
             this.Acerca = new System.Windows.Forms.TabPage();
             this.tabOpcionesMenu = new MaterialSkin.Controls.MaterialTabSelector();
+            this.btnAcercaDe = new System.Windows.Forms.Button();
+            this.btnAyuda = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.btnAcercaDe = new System.Windows.Forms.Button();
-            this.btnAyuda = new System.Windows.Forms.Button();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.PnlPrincipal.SuspendLayout();
             this.PnlMenu.SuspendLayout();
@@ -220,6 +220,7 @@
             this.btnInformes.TabIndex = 8;
             this.btnInformes.Text = "Informes";
             this.btnInformes.UseVisualStyleBackColor = true;
+            this.btnInformes.Click += new System.EventHandler(this.btnInformes_Click);
             // 
             // btnFacturas
             // 
@@ -237,6 +238,7 @@
             this.btnFacturas.TabIndex = 7;
             this.btnFacturas.Text = "Facturas";
             this.btnFacturas.UseVisualStyleBackColor = true;
+            this.btnFacturas.Click += new System.EventHandler(this.btnFacturas_Click);
             // 
             // Seguridad
             // 
@@ -324,6 +326,40 @@
             this.tabOpcionesMenu.Size = new System.Drawing.Size(771, 30);
             this.tabOpcionesMenu.TabIndex = 1;
             // 
+            // btnAcercaDe
+            // 
+            this.btnAcercaDe.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.btnAcercaDe.FlatAppearance.BorderSize = 0;
+            this.btnAcercaDe.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnAcercaDe.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.btnAcercaDe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAcercaDe.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAcercaDe.ForeColor = System.Drawing.Color.White;
+            this.btnAcercaDe.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAcercaDe.Location = new System.Drawing.Point(12, 264);
+            this.btnAcercaDe.Name = "btnAcercaDe";
+            this.btnAcercaDe.Size = new System.Drawing.Size(179, 34);
+            this.btnAcercaDe.TabIndex = 15;
+            this.btnAcercaDe.Text = "Acerca de";
+            this.btnAcercaDe.UseVisualStyleBackColor = true;
+            // 
+            // btnAyuda
+            // 
+            this.btnAyuda.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.btnAyuda.FlatAppearance.BorderSize = 0;
+            this.btnAyuda.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnAyuda.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.btnAyuda.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAyuda.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAyuda.ForeColor = System.Drawing.Color.White;
+            this.btnAyuda.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAyuda.Location = new System.Drawing.Point(12, 202);
+            this.btnAyuda.Name = "btnAyuda";
+            this.btnAyuda.Size = new System.Drawing.Size(179, 34);
+            this.btnAyuda.TabIndex = 14;
+            this.btnAyuda.Text = "Ayuda";
+            this.btnAyuda.UseVisualStyleBackColor = true;
+            // 
             // btnSalir
             // 
             this.btnSalir.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
@@ -382,40 +418,6 @@
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 10;
             this.pictureBox4.TabStop = false;
-            // 
-            // btnAcercaDe
-            // 
-            this.btnAcercaDe.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
-            this.btnAcercaDe.FlatAppearance.BorderSize = 0;
-            this.btnAcercaDe.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnAcercaDe.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.btnAcercaDe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAcercaDe.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAcercaDe.ForeColor = System.Drawing.Color.White;
-            this.btnAcercaDe.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAcercaDe.Location = new System.Drawing.Point(12, 264);
-            this.btnAcercaDe.Name = "btnAcercaDe";
-            this.btnAcercaDe.Size = new System.Drawing.Size(179, 34);
-            this.btnAcercaDe.TabIndex = 15;
-            this.btnAcercaDe.Text = "Acerca de";
-            this.btnAcercaDe.UseVisualStyleBackColor = true;
-            // 
-            // btnAyuda
-            // 
-            this.btnAyuda.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
-            this.btnAyuda.FlatAppearance.BorderSize = 0;
-            this.btnAyuda.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnAyuda.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.btnAyuda.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAyuda.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAyuda.ForeColor = System.Drawing.Color.White;
-            this.btnAyuda.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAyuda.Location = new System.Drawing.Point(12, 202);
-            this.btnAyuda.Name = "btnAyuda";
-            this.btnAyuda.Size = new System.Drawing.Size(179, 34);
-            this.btnAyuda.TabIndex = 14;
-            this.btnAyuda.Text = "Ayuda";
-            this.btnAyuda.UseVisualStyleBackColor = true;
             // 
             // pictureBox5
             // 
