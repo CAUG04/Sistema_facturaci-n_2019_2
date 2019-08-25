@@ -41,5 +41,17 @@ namespace Sistema_facturación_2019_2
             formHijo.FormBorderStyle = FormBorderStyle.None;
             formHijo.Show();
         }
+
+        private void btnProductos_Click(object sender, EventArgs e)
+        {
+            FrmProductos frmProductos = new FrmProductos();
+            AbrirForm(frmProductos);
+        }
+
+        private void btnCategorias_Click(object sender, EventArgs e)
+        {
+            FrmCategorias frmCategorias = new FrmCategorias();
+            AbrirForm(frmCategorias);
+        }
     }
 }
