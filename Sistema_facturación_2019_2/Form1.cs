@@ -21,5 +21,13 @@ namespace Sistema_facturación_2019_2
         {
             Application.Exit();
         }
+
+        private void btnValidar_Click(object sender, EventArgs e)
+        {
+            // Se crea el objeto del formulario principal
+            FrmPrincipal frmprincipal = new FrmPrincipal();
+            this.Hide(); // oculta el formulario login
+            frmprincipal.Show(); // muestra el formulario principal
+        }
     }
 }
