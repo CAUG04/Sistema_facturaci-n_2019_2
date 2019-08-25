@@ -212,11 +212,11 @@
             this.BtnSalir.TabIndex = 11;
             this.BtnSalir.Text = "Salir";
             this.BtnSalir.UseVisualStyleBackColor = true;
+            this.BtnSalir.Click += new System.EventHandler(this.BtnSalir_Click);
             // 
             // dgClientes
             // 
             this.dgClientes.BackgroundColor = System.Drawing.Color.White;
-            this.dgClientes.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgClientes.Location = new System.Drawing.Point(127, 355);
             this.dgClientes.Name = "dgClientes";

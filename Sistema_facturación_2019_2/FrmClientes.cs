@@ -18,5 +18,10 @@ namespace Sistema_facturación_2019_2
         {
             InitializeComponent();
         }
+
+        private void BtnSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
