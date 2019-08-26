@@ -31,6 +31,7 @@
             this.txtDetalles = new System.Windows.Forms.TextBox();
             this.lblDetalles = new MaterialSkin.Controls.MaterialLabel();
             this.lblAyuda = new MaterialSkin.Controls.MaterialLabel();
+            this.BtnSalirAyuda = new MaterialSkin.Controls.MaterialRaisedButton();
             this.SuspendLayout();
             // 
             // txtDetalles
@@ -67,11 +68,25 @@
             this.lblAyuda.TabIndex = 85;
             this.lblAyuda.Text = "AYUDA";
             // 
+            // BtnSalirAyuda
+            // 
+            this.BtnSalirAyuda.Depth = 0;
+            this.BtnSalirAyuda.Location = new System.Drawing.Point(793, 390);
+            this.BtnSalirAyuda.MouseState = MaterialSkin.MouseState.HOVER;
+            this.BtnSalirAyuda.Name = "BtnSalirAyuda";
+            this.BtnSalirAyuda.Primary = true;
+            this.BtnSalirAyuda.Size = new System.Drawing.Size(86, 24);
+            this.BtnSalirAyuda.TabIndex = 88;
+            this.BtnSalirAyuda.Text = "Salir";
+            this.BtnSalirAyuda.UseVisualStyleBackColor = true;
+            this.BtnSalirAyuda.Click += new System.EventHandler(this.BtnSalirEmpleado_Click);
+            // 
             // FrmAyuda
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(967, 558);
+            this.Controls.Add(this.BtnSalirAyuda);
             this.Controls.Add(this.txtDetalles);
             this.Controls.Add(this.lblDetalles);
             this.Controls.Add(this.lblAyuda);
@@ -88,5 +103,6 @@
         private System.Windows.Forms.TextBox txtDetalles;
         private MaterialSkin.Controls.MaterialLabel lblDetalles;
         private MaterialSkin.Controls.MaterialLabel lblAyuda;
+        private MaterialSkin.Controls.MaterialRaisedButton BtnSalirAyuda;
     }
 }

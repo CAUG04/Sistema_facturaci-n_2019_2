@@ -31,6 +31,7 @@
             this.txtDetallesAcercaDe = new System.Windows.Forms.TextBox();
             this.lblDetallesAcercaDe = new MaterialSkin.Controls.MaterialLabel();
             this.lblAceraDe = new MaterialSkin.Controls.MaterialLabel();
+            this.BtnSalirAcercaDe = new MaterialSkin.Controls.MaterialRaisedButton();
             this.SuspendLayout();
             // 
             // txtDetallesAcercaDe
@@ -67,11 +68,25 @@
             this.lblAceraDe.TabIndex = 88;
             this.lblAceraDe.Text = "ACERCA DE";
             // 
+            // BtnSalirAcercaDe
+            // 
+            this.BtnSalirAcercaDe.Depth = 0;
+            this.BtnSalirAcercaDe.Location = new System.Drawing.Point(792, 390);
+            this.BtnSalirAcercaDe.MouseState = MaterialSkin.MouseState.HOVER;
+            this.BtnSalirAcercaDe.Name = "BtnSalirAcercaDe";
+            this.BtnSalirAcercaDe.Primary = true;
+            this.BtnSalirAcercaDe.Size = new System.Drawing.Size(86, 24);
+            this.BtnSalirAcercaDe.TabIndex = 91;
+            this.BtnSalirAcercaDe.Text = "Salir";
+            this.BtnSalirAcercaDe.UseVisualStyleBackColor = true;
+            this.BtnSalirAcercaDe.Click += new System.EventHandler(this.BtnSalirAcercaDe_Click);
+            // 
             // FrmAcercaDe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(967, 558);
+            this.Controls.Add(this.BtnSalirAcercaDe);
             this.Controls.Add(this.txtDetallesAcercaDe);
             this.Controls.Add(this.lblDetallesAcercaDe);
             this.Controls.Add(this.lblAceraDe);
@@ -88,5 +103,6 @@
         private System.Windows.Forms.TextBox txtDetallesAcercaDe;
         private MaterialSkin.Controls.MaterialLabel lblDetallesAcercaDe;
         private MaterialSkin.Controls.MaterialLabel lblAceraDe;
+        private MaterialSkin.Controls.MaterialRaisedButton BtnSalirAcercaDe;
     }
 }
