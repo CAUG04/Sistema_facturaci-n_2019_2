@@ -269,6 +269,7 @@
             this.btnSeguridad.TabIndex = 13;
             this.btnSeguridad.Text = "Seguridad";
             this.btnSeguridad.UseVisualStyleBackColor = true;
+            this.btnSeguridad.Click += new System.EventHandler(this.btnSeguridad_Click);
             // 
             // btnRoles
             // 
@@ -286,6 +287,7 @@
             this.btnRoles.TabIndex = 12;
             this.btnRoles.Text = "Roles";
             this.btnRoles.UseVisualStyleBackColor = true;
+            this.btnRoles.Click += new System.EventHandler(this.btnRoles_Click);
             // 
             // btnEmpleados
             // 
@@ -303,6 +305,7 @@
             this.btnEmpleados.TabIndex = 11;
             this.btnEmpleados.Text = "Empleados";
             this.btnEmpleados.UseVisualStyleBackColor = true;
+            this.btnEmpleados.Click += new System.EventHandler(this.btnEmpleados_Click);
             // 
             // Acerca
             // 
@@ -342,6 +345,7 @@
             this.btnAcercaDe.TabIndex = 15;
             this.btnAcercaDe.Text = "Acerca de";
             this.btnAcercaDe.UseVisualStyleBackColor = true;
+            this.btnAcercaDe.Click += new System.EventHandler(this.btnAcercaDe_Click);
             // 
             // btnAyuda
             // 
@@ -359,6 +363,7 @@
             this.btnAyuda.TabIndex = 14;
             this.btnAyuda.Text = "Ayuda";
             this.btnAyuda.UseVisualStyleBackColor = true;
+            this.btnAyuda.Click += new System.EventHandler(this.btnAyuda_Click);
             // 
             // btnSalir
             // 

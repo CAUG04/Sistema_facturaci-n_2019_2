@@ -55,7 +55,7 @@
             this.lblClienteFacturas.Depth = 0;
             this.lblClienteFacturas.Font = new System.Drawing.Font("Roboto", 11F);
             this.lblClienteFacturas.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblClienteFacturas.Location = new System.Drawing.Point(544, 87);
+            this.lblClienteFacturas.Location = new System.Drawing.Point(544, 88);
             this.lblClienteFacturas.MouseState = MaterialSkin.MouseState.HOVER;
             this.lblClienteFacturas.Name = "lblClienteFacturas";
             this.lblClienteFacturas.Size = new System.Drawing.Size(56, 19);
@@ -65,7 +65,7 @@
             // cboClienteFacturas
             // 
             this.cboClienteFacturas.FormattingEnabled = true;
-            this.cboClienteFacturas.Location = new System.Drawing.Point(660, 88);
+            this.cboClienteFacturas.Location = new System.Drawing.Point(660, 89);
             this.cboClienteFacturas.Name = "cboClienteFacturas";
             this.cboClienteFacturas.Size = new System.Drawing.Size(144, 21);
             this.cboClienteFacturas.TabIndex = 45;
@@ -82,7 +82,7 @@
             // BtnSalirFacturas
             // 
             this.BtnSalirFacturas.Depth = 0;
-            this.BtnSalirFacturas.Location = new System.Drawing.Point(855, 408);
+            this.BtnSalirFacturas.Location = new System.Drawing.Point(855, 409);
             this.BtnSalirFacturas.MouseState = MaterialSkin.MouseState.HOVER;
             this.BtnSalirFacturas.Name = "BtnSalirFacturas";
             this.BtnSalirFacturas.Primary = true;
@@ -107,7 +107,7 @@
             // BtnEliminarFacturas
             // 
             this.BtnEliminarFacturas.Depth = 0;
-            this.BtnEliminarFacturas.Location = new System.Drawing.Point(855, 171);
+            this.BtnEliminarFacturas.Location = new System.Drawing.Point(855, 172);
             this.BtnEliminarFacturas.MouseState = MaterialSkin.MouseState.HOVER;
             this.BtnEliminarFacturas.Name = "BtnEliminarFacturas";
             this.BtnEliminarFacturas.Primary = true;
@@ -119,7 +119,7 @@
             // btnActualizarFacturas
             // 
             this.btnActualizarFacturas.Depth = 0;
-            this.btnActualizarFacturas.Location = new System.Drawing.Point(855, 123);
+            this.btnActualizarFacturas.Location = new System.Drawing.Point(855, 124);
             this.btnActualizarFacturas.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnActualizarFacturas.Name = "btnActualizarFacturas";
             this.btnActualizarFacturas.Primary = true;
@@ -131,7 +131,7 @@
             // BtnNuevoFacturas
             // 
             this.BtnNuevoFacturas.Depth = 0;
-            this.BtnNuevoFacturas.Location = new System.Drawing.Point(855, 82);
+            this.BtnNuevoFacturas.Location = new System.Drawing.Point(855, 83);
             this.BtnNuevoFacturas.MouseState = MaterialSkin.MouseState.HOVER;
             this.BtnNuevoFacturas.Name = "BtnNuevoFacturas";
             this.BtnNuevoFacturas.Primary = true;
@@ -192,7 +192,7 @@
             // 
             this.TxtDescuentoFacturas.Depth = 0;
             this.TxtDescuentoFacturas.Hint = "";
-            this.TxtDescuentoFacturas.Location = new System.Drawing.Point(8, 123);
+            this.TxtDescuentoFacturas.Location = new System.Drawing.Point(8, 124);
             this.TxtDescuentoFacturas.MouseState = MaterialSkin.MouseState.HOVER;
             this.TxtDescuentoFacturas.Name = "TxtDescuentoFacturas";
             this.TxtDescuentoFacturas.PasswordChar = '\0';
@@ -208,7 +208,7 @@
             // 
             this.txtNumeroFacturas.Depth = 0;
             this.txtNumeroFacturas.Hint = "";
-            this.txtNumeroFacturas.Location = new System.Drawing.Point(8, 83);
+            this.txtNumeroFacturas.Location = new System.Drawing.Point(8, 84);
             this.txtNumeroFacturas.MouseState = MaterialSkin.MouseState.HOVER;
             this.txtNumeroFacturas.Name = "txtNumeroFacturas";
             this.txtNumeroFacturas.PasswordChar = '\0';
@@ -226,7 +226,7 @@
             this.lblFacturas.Depth = 0;
             this.lblFacturas.Font = new System.Drawing.Font("Roboto", 11F);
             this.lblFacturas.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblFacturas.Location = new System.Drawing.Point(387, 22);
+            this.lblFacturas.Location = new System.Drawing.Point(387, 23);
             this.lblFacturas.MouseState = MaterialSkin.MouseState.HOVER;
             this.lblFacturas.Name = "lblFacturas";
             this.lblFacturas.Size = new System.Drawing.Size(84, 19);
