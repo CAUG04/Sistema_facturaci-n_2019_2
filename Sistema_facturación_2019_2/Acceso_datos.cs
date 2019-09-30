@@ -74,6 +74,63 @@ namespace Sistema_facturación_2019_2
                 return "";
             }
         }
+
+        // Método que permite consultar una tabla y recuperar un conjunto de datos permite filtrar la información requerida
+        public DataTable cargartabla(string tabla, string strCondicion)
+        {
+            try
+            {
+                AbrirBd();
+                string Sql = "Select * from " + tabla + " " + strCondicion;
+                da = new SqlDataAdapter(Sql, conexion);
+                ds = new DataSet();
+                da.Fill(ds, tabla);
+                DataTable dt = new DataTable();
+                dt = ds.Tables[tabla];
+                CerrarrBd();
+                return dt;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("ERROR EN LA CONSULTA: " + ex.ToString());
+                return null;
+            }
+        }
+
+        // ------- recibe una sentencia de para realizar acciones de actualizar, retirar y nuevo
+        // solo retorna un valor numerico que indica cuantas filas fueron afectadas
+        public string EjecutarComando(string sentencia)
+        {
+            string salida = "LOS DATOS SE ACTUALIZARON SATISFACTORIAMENTE!";
+            try
+            {
+                int retornado;
+                AbrirBd();
+                cmd = new SqlCommand(sentencia, conexion);
+                retornado = cmd.ExecuteNonQuery(); // UTILIZADO PARA UPDATE, INSERT y DELETE
+                CerrarrBd();
+                if (retornado > 0)
+                {
+                    salida = "Los datos fueron Actualizados";
+                }
+                else
+                {
+                    salida = "Los datos no fueron Actualizados";
+                }
+            }
+            catch (Exception ex)
+            {
+                salida = "falló inserción: " + ex;
+            }
+            return salida;
+        }
+
+        // Método que permite consultar con una sentencia (select) o invocar un procedimiento almacenado 
+        public DataTable EjecutarComandoDatos(string cmd)
+        {
+
+            try { AbrirBd(); da = new SqlDataAdapter(cmd, conexion); dt = new DataTable(); da.Fill(dt); CerrarrBd(); return dt; } catch (Exception ex) { MessageBox.Show("FALLÓ OPERACIÓN: " + ex); return null; }
+        }
     }
 }
   
