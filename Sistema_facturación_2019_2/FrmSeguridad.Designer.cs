@@ -28,15 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.lblEmpleadoSeguridad = new MaterialSkin.Controls.MaterialLabel();
             this.cboEmpleadoSeguridad = new System.Windows.Forms.ComboBox();
-            this.BtnSalirSeguridad = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.BtnCancelarSeguridad = new MaterialSkin.Controls.MaterialRaisedButton();
             this.BtnEliminarEmpleadoSeguridad = new MaterialSkin.Controls.MaterialRaisedButton();
             this.btnActualizarEmpleadoSeguridad = new MaterialSkin.Controls.MaterialRaisedButton();
             this.BtnNuevoEmpleadoSeguridad = new MaterialSkin.Controls.MaterialRaisedButton();
             this.TxtClaveSeguridad = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.txtUsuarioSeguridad = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.lblSeguridad = new MaterialSkin.Controls.MaterialLabel();
+            this.MensajeError = new System.Windows.Forms.ErrorProvider(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.MensajeError)).BeginInit();
             this.SuspendLayout();
             // 
             // lblEmpleadoSeguridad
@@ -60,18 +63,18 @@
             this.cboEmpleadoSeguridad.Size = new System.Drawing.Size(144, 21);
             this.cboEmpleadoSeguridad.TabIndex = 54;
             // 
-            // BtnSalirSeguridad
+            // BtnCancelarSeguridad
             // 
-            this.BtnSalirSeguridad.Depth = 0;
-            this.BtnSalirSeguridad.Location = new System.Drawing.Point(855, 409);
-            this.BtnSalirSeguridad.MouseState = MaterialSkin.MouseState.HOVER;
-            this.BtnSalirSeguridad.Name = "BtnSalirSeguridad";
-            this.BtnSalirSeguridad.Primary = true;
-            this.BtnSalirSeguridad.Size = new System.Drawing.Size(86, 24);
-            this.BtnSalirSeguridad.TabIndex = 53;
-            this.BtnSalirSeguridad.Text = "Salir";
-            this.BtnSalirSeguridad.UseVisualStyleBackColor = true;
-            this.BtnSalirSeguridad.Click += new System.EventHandler(this.BtnSalirSeguridad_Click);
+            this.BtnCancelarSeguridad.Depth = 0;
+            this.BtnCancelarSeguridad.Location = new System.Drawing.Point(855, 409);
+            this.BtnCancelarSeguridad.MouseState = MaterialSkin.MouseState.HOVER;
+            this.BtnCancelarSeguridad.Name = "BtnCancelarSeguridad";
+            this.BtnCancelarSeguridad.Primary = true;
+            this.BtnCancelarSeguridad.Size = new System.Drawing.Size(86, 24);
+            this.BtnCancelarSeguridad.TabIndex = 53;
+            this.BtnCancelarSeguridad.Text = "Cancelar";
+            this.BtnCancelarSeguridad.UseVisualStyleBackColor = true;
+            this.BtnCancelarSeguridad.Click += new System.EventHandler(this.BtnCancelarSeguridad_Click);
             // 
             // BtnEliminarEmpleadoSeguridad
             // 
@@ -84,6 +87,7 @@
             this.BtnEliminarEmpleadoSeguridad.TabIndex = 52;
             this.BtnEliminarEmpleadoSeguridad.Text = "Eliminar";
             this.BtnEliminarEmpleadoSeguridad.UseVisualStyleBackColor = true;
+            this.BtnEliminarEmpleadoSeguridad.Click += new System.EventHandler(this.BtnEliminarEmpleadoSeguridad_Click);
             // 
             // btnActualizarEmpleadoSeguridad
             // 
@@ -96,6 +100,7 @@
             this.btnActualizarEmpleadoSeguridad.TabIndex = 51;
             this.btnActualizarEmpleadoSeguridad.Text = "Actualizar";
             this.btnActualizarEmpleadoSeguridad.UseVisualStyleBackColor = true;
+            this.btnActualizarEmpleadoSeguridad.Click += new System.EventHandler(this.btnActualizarEmpleadoSeguridad_Click);
             // 
             // BtnNuevoEmpleadoSeguridad
             // 
@@ -108,6 +113,7 @@
             this.BtnNuevoEmpleadoSeguridad.TabIndex = 50;
             this.BtnNuevoEmpleadoSeguridad.Text = "Nuevo";
             this.BtnNuevoEmpleadoSeguridad.UseVisualStyleBackColor = true;
+            this.BtnNuevoEmpleadoSeguridad.Click += new System.EventHandler(this.BtnNuevoEmpleadoSeguridad_Click);
             // 
             // TxtClaveSeguridad
             // 
@@ -154,6 +160,10 @@
             this.lblSeguridad.TabIndex = 47;
             this.lblSeguridad.Text = "SEGURIDAD";
             // 
+            // MensajeError
+            // 
+            this.MensajeError.ContainerControl = this;
+            // 
             // FrmSeguridad
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -161,7 +171,7 @@
             this.ClientSize = new System.Drawing.Size(967, 558);
             this.Controls.Add(this.lblEmpleadoSeguridad);
             this.Controls.Add(this.cboEmpleadoSeguridad);
-            this.Controls.Add(this.BtnSalirSeguridad);
+            this.Controls.Add(this.BtnCancelarSeguridad);
             this.Controls.Add(this.BtnEliminarEmpleadoSeguridad);
             this.Controls.Add(this.btnActualizarEmpleadoSeguridad);
             this.Controls.Add(this.BtnNuevoEmpleadoSeguridad);
@@ -171,6 +181,8 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmSeguridad";
             this.Text = "FrmSeguridad";
+            this.Load += new System.EventHandler(this.FrmSeguridad_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.MensajeError)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -180,12 +192,13 @@
 
         private MaterialSkin.Controls.MaterialLabel lblEmpleadoSeguridad;
         private System.Windows.Forms.ComboBox cboEmpleadoSeguridad;
-        private MaterialSkin.Controls.MaterialRaisedButton BtnSalirSeguridad;
+        private MaterialSkin.Controls.MaterialRaisedButton BtnCancelarSeguridad;
         private MaterialSkin.Controls.MaterialRaisedButton BtnEliminarEmpleadoSeguridad;
         private MaterialSkin.Controls.MaterialRaisedButton btnActualizarEmpleadoSeguridad;
         private MaterialSkin.Controls.MaterialRaisedButton BtnNuevoEmpleadoSeguridad;
         private MaterialSkin.Controls.MaterialSingleLineTextField TxtClaveSeguridad;
         private MaterialSkin.Controls.MaterialSingleLineTextField txtUsuarioSeguridad;
         private MaterialSkin.Controls.MaterialLabel lblSeguridad;
+        private System.Windows.Forms.ErrorProvider MensajeError;
     }
 }
