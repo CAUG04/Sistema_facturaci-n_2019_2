@@ -111,7 +111,7 @@ namespace Sistema_facturación_2019_2
                 try
                 {
                     Acceso_datos Acceso = new Acceso_datos();
-                    string sentencia = $"Exec actualizar_Seguridad '{ Convert.ToInt32(cboEmpleadoSeguridad.SelectedValue)}' ,'{txtUsuarioSeguridad.Text}','{TxtClaveSeguridad.Text}','{DateTime.Now.ToString("MM-dd-yyyy")}','admin'";
+                    string sentencia = $"Exec actualizar_Seguridad '{ Convert.ToInt32(cboEmpleadoSeguridad.SelectedValue)}' ,'{txtUsuarioSeguridad.Text}','{TxtClaveSeguridad.Text}','{DateTime.Now.ToString("YYYY-MM-DDTHH:MM:SS")}','admin'";
                     MessageBox.Show(Acceso.EjecutarComando(sentencia));
                     actualizado = true;
                 }

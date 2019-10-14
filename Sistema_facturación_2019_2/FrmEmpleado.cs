@@ -114,7 +114,7 @@ namespace Sistema_facturación_2019_2
                 try
                 {
                     Acceso_datos Acceso = new Acceso_datos();
-                    string sentencia = $"Exec actualizar_Empleado '{txtNombreEmpleado.Text}',{ TxtDocumento.Text} ,'{txtDireccion.Text}','{txtTelefono.Text}', '{txtEmail.Text}',{Convert.ToInt32(cboRolEmpleado.SelectedValue)},'{dtpFechaIngreso.Value.ToString("AAAAMMDD hh:mn:ss")}','{dtpFechaRetiro.Value.ToString("AAAAMMDD hh:mn:ss")}', '{txtDatosAdicionales.Text}' ,'{DateTime.Now.ToString("AAAAMMDD hh:mn:ss")}','admin'";
+                    string sentencia = $"Exec actualizar_Empleado '{txtNombreEmpleado.Text}','{ TxtDocumento.Text}' ,'{txtDireccion.Text}','{txtTelefono.Text}', '{txtEmail.Text}','{(cboRolEmpleado.SelectedValue)}','{dtpFechaIngreso.Value.ToString("yyyy-MM-DDTHH:MM:SS")}','{dtpFechaRetiro.Value.ToString("yyyy-MM-DDTHH:MM:SS")}', '{txtDatosAdicionales.Text}', ' select convert(DateTime,'{DateTime.Now.ToString("yyyy-MM-DDTHH:MM:SS")}',20)','admin'"; // select convert(datetime, '{DateTime.Now.ToString("AAAA-MM-DD HH:mm:ss")}', 20),'admin'"; "YYYY-MM-DDTHH:MM:SS"
                     MessageBox.Show(Acceso.EjecutarComando(sentencia));
                     LLENAR_GRID();
                     actualizado = true;
